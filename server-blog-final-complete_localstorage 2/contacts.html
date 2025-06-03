@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Server Tech Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme-link" rel="stylesheet" href="dark.css">
+</head>
+<body>
+<a href="index.html" class="toggle-btn">← Back</a>
+<header class="fade-in">
+    <h1>Contact the Author</h1>
+    <p>Want to reach out? Here's how.</p>
+</header>
+<div class="container fade-in">
+    <p><strong>Email:</strong> andrey.t@example.com</p>
+    <p><strong>Telegram:</strong> @andreytech</p>
+    <p><strong>GitHub:</strong> github.com/andreytech</p>
+</div>
+<footer class="fade-in">
+    © 2025 | Contact Page | Author: Andrey T
+</footer>
+
+<script>
+const theme = localStorage.getItem("theme") || "dark";
+document.getElementById("theme-link").setAttribute("href", theme + ".css");
+</script>
+</body>
+</html>

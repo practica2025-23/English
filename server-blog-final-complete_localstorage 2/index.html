@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evolution of Server Technologies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme-link" rel="stylesheet" href="dark.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+<a href="contacts.html" class="contact-link">Contact</a>
+
+<header class="fade-in">
+    <h1>Evolution of Server Installations</h1>
+    <p>From 1990s to the Future of IT Infrastructure</p>
+</header>
+
+<div class="container fade-in">
+    <h2>1940–1970: First Machines</h2>
+    <img src="images/server2.jpg" alt="Early Mainframe">
+    <p>The earliest server systems were huge and powered by vacuum tubes and punched cards. Operations required large rooms and specialized operators. Systems like ENIAC and MESM laid the groundwork for centralized computing.</p>
+
+    <h2>1970–1990: Industrial Mainframes</h2>
+    <img src="images/server3.jpg" alt="Room of racks and cables">
+    <p>Mainframes became more compact but still required dedicated space and staff. Networks slowly began connecting servers across organizations, forming early computer networks. Cable management was a physical art.</p>
+
+    <h2>2000–2020: Cloud & Virtualization</h2>
+    <img src="images/server1.jpg" alt="Modern server hall">
+    <p>Mass virtualization and public cloud platforms (like AWS, Azure) replaced physical infrastructure. Businesses started deploying hybrid and hyperconverged infrastructures for flexibility and scalability.</p>
+
+    <h2>2020–2025: Edge & Digital Intelligence</h2>
+    <img src="images/server4.jpg" alt="Futuristic servers">
+    <p>Servers are now edge-based, AI-powered, and ultra-efficient. Quantum experiments, autonomous infrastructure, and green energy are defining the future. Processing is decentralized yet more connected than ever.</p>
+
+    <h2>What's Next?</h2>
+    <ul>
+        <li>Quantum servers with near-instant computation</li>
+        <li>AI-managed infrastructure that heals itself</li>
+        <li>Green data centers running on renewables</li>
+        <li>Serverless platforms dominating app hosting</li>
+    </ul>
+</div>
+
+<footer class="fade-in">
+    © 2025 | Modern Server Tech Blog | Author: Andrey T
+</footer>
+
+<script>
+function loadTheme() {
+    const saved = localStorage.getItem("theme") || "dark";
+    document.getElementById("theme-link").setAttribute("href", saved + ".css");
+}
+function toggleTheme() {
+    const current = localStorage.getItem("theme") || "dark";
+    const next = current === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", next);
+    location.reload();
+}
+loadTheme();
+</script>
+</body>
+</html>
